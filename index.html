@@ -8,81 +8,32 @@
   <h1>HOME</h1>
 </div>
 <!--Dropdown-->
-<div>
- <head>
-</ul>
-<style>
-ul {
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: #fdb2da;
-  
-}
 
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
-</head>
-
-
-<ul>
-  <li><a href="index.html" style="font-size:30px",>Home</a></li>
-  <li><a href="meetings.html" style="font-size:30px">Meetings</a></li>
-  <li><a href="support.html" style="font-size: 30px">Support</a></li>
-  
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn" style="font-size:30px">More</a>
-    <div class="dropdown-content">
-      <a href="about.html">About</a>
-      <a href="leadership.html">Leadership</a>
-      <a href="#"></a>
-    </div>
-  </li>
-</ul>
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="about.html">About</a>
+  <a href="meetings.html">Meetings</a>
+  <a href="#">Clients</a>
+  <a href="support.html">Support</a>
 </div>
 
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+  
 <style>
   body{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -113,6 +64,7 @@ p{
 body {
   margin: 0;
 }
+
 
 /* Style the header */
 .header {
@@ -170,9 +122,6 @@ body {
 </head>
 <body>
 
-<div class="topnav">
-  <p style=><u><b>Website Offical Completion Date: December 1st, 2022</b></u></p>
-  </div>
 <h><u>If you need help, visit <a href="support.html">our support page</a>or talk with someone you trust.</u></h>
 <div class="row">
   <div class="column">
