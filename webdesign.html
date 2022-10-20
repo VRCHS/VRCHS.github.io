@@ -1,24 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
 
-</head>
-<body>
-
+<div>
 <div id="mySidebar" class="sidebar">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="#">About</a>
+  <a href="#"></a>
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
 </div>
-
 <div id="main">
-  <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>  
-  <h2>Collapsed Sidebar</h2>
-  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+  <button class="openbtn" onclick="openNav()">☰ Menu</button>  
 </div>
-
 <script>
 function openNav() {
   document.getElementById("mySidebar").style.width = "250px";
@@ -30,8 +23,31 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 </script>
-   
-</body>
+</div> <!--Sidebar-->
+
+<div class="row">
+  <header>When you click buy it will open a email addressed to transalliance.me which is my domain. In the subject leave the product you wish to purchase along with your mobile phone.</header>
+  <div class="column" style="background-color:#aaa;">
+    <h2>Premium: $39.99<br><button class="button button4"><a href="mailto:transalliance@transalliance.me">Buy</a>
+</button></h2>
+    <p>Free Domain<br>Unlimited Pages<br>Tab Title<br>Animated Navbar<br><br>All Navbar Options<br>Dark Mode Toggle</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Pro: $24.99<br><button class="button button4"><a href="mailto:transalliance@transalliance.me">Buy</a></h2>
+    <p>Does not Include Domain<br>15 Sub-page limit<br>Tab Title<br>Dark Mode Toggle<br> Animated Open/Closing Navbar or Fixed</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>Advanced: $15.99<br><button class="button button4"><a href="mailto:transalliance@transalliance.me">Buy</a></h2>
+    <p>Does not include domain<br>10 Sub-page limit<br>Fixed Navbar<br>Tab Title</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Basic: $9.99<br><button class="button button4"><a href="mailto:transalliance@transalliance.me">Buy</a></h2>
+    <p>Does Not Include Domain<br>5 Sub-page limit<br>Fixed Navbar<br>No Tab Title</p>
+  </div>
+</div> <!--Collums-->
+
+
+
 </html> 
 
 
@@ -41,6 +57,7 @@ function closeNav() {
 <style>
 body {
   font-family: "Lato", sans-serif;
+  background-color: grey;
 }
 
 .sidebar {
@@ -63,6 +80,7 @@ body {
   color: #818181;
   display: block;
   transition: 0.3s;
+  
 }
 
 .sidebar a:hover {
@@ -84,6 +102,7 @@ body {
   color: white;
   padding: 10px 15px;
   border: none;
+  
 }
 
 .openbtn:hover {
@@ -100,4 +119,58 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
 }
-</style>
+</style> <!--Body And Sidebar-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 350px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+header{
+  background-color: red;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 25%;
+  }
+}
+</style> <!--Columms-->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+</style> <!--Button-->
