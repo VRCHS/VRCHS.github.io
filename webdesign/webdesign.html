@@ -26,7 +26,7 @@ function closeNav() {
 </div> <!--Sidebar-->
 
 <div class="row">
-  <header>When you click buy it will open a email addressed to transalliance.me which is my domain. In the subject leave the product you wish to purchase along with your mobile phone.</header>
+  <header>When you click buy it will open a email addressed to transalliance.me which is my domain. In the subject leave the product you wish to purchase and your phone#.</header>
   <div class="column" style="background-color:#aaa;">
     <h2>Premium: $39.99<br><button class="button button4"><a href="mailto:transalliance@transalliance.me">Buy</a>
 </button></h2>
@@ -148,7 +148,14 @@ header{
 /* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 25%;
+    width: 100%;
+  }
+  body{
+    background: black;
+  }
+  header{
+    background: yellow;
+    font-weight: bolder;
   }
 }
 </style> <!--Columms-->
